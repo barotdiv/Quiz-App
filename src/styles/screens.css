@@ -1,0 +1,227 @@
+.start-eyebrow {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--indigo);
+    margin-bottom: 16px;
+}
+
+.start-title {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 7vw, 48px);
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.start-title span {
+    color: var(--indigo);
+}
+
+.start-desc {
+    font-size: 15px;
+    color: var(--subtle);
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.meta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.meta-item {
+    background: var(--muted);
+    border-radius: var(--radius-md);
+    padding: 14px 12px;
+    text-align: center;
+    border: 1px solid var(--border);
+}
+
+.meta-value {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.meta-label {
+    font-size: 11px;
+    color: var(--dim);
+    margin-top: 2px;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 480px) {
+    .meta-grid {
+        gap: 8px;
+    }
+
+    .meta-value {
+        font-size: 18px;
+    }
+}
+
+.quiz-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    gap: 12px;
+}
+
+.quiz-meta {
+    flex: 1;
+    min-width: 0;
+}
+
+.category-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--indigo);
+    background: rgba(99, 102, 241, 0.12);
+    border-radius: 6px;
+    padding: 3px 8px;
+    margin-bottom: 8px;
+}
+
+.progress-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.progress-track {
+    flex: 1;
+    height: 4px;
+    background: var(--muted);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--indigo), var(--purple));
+    border-radius: 99px;
+    transition: width 0.4s ease;
+}
+
+.progress-label {
+    font-size: 12px;
+    color: var(--dim);
+    white-space: nowrap;
+}
+
+.question-text {
+    font-family: var(--font-display);
+    font-size: clamp(17px, 4vw, 21px);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.score-ring-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.score-ring {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.score-ring-num {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-num {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.score-denom {
+    font-size: 13px;
+    color: var(--dim);
+    margin-top: 2px;
+}
+
+.grade {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.grade-sub {
+    text-align: center;
+    font-size: 14px;
+    color: var(--subtle);
+    margin-bottom: 28px;
+}
+
+.answer-review {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 28px;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: var(--muted);
+    border: 1px solid var(--surface);
+}
+
+.review-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.review-q {
+    font-size: 12px;
+    color: var(--subtle);
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review-badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 99px;
+    flex-shrink: 0;
+}
